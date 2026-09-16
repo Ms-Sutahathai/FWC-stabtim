@@ -1,4 +1,4 @@
- constbutton = document.getElementById('bgBtn');
+ const button = document.getElementById('bgBtn');
 
 button.addEventListener('click', function() {
   
