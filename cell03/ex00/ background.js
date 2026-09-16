@@ -1,11 +1,9 @@
-body {
-    margin: 0;
-    padding: 20px;
-    transition: background-color 0.3s ease;
-}
+const button = document.getElementById('bgBtn');
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
+button.addEventListener('click', function() {
+  
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+    
+   
+    document.body.style.backgroundColor = randomColor;
+});
