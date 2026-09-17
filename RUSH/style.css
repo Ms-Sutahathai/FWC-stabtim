@@ -1,0 +1,85 @@
+/* การตั้งค่าพื้นฐาน */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 60px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* 1. Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #212529;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #0d6efd;
+}
+
+/* 2. Layout Section */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.bg-light { background-color: #e9ecef; }
+.bg-dark { background-color: #212529; color: #fff; }
+
+/* 3. Components (รูปภาพ & การ์ด) */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0d6efd;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 4. Buttons */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  color: white;
+  background-color: #0d6efd;
+  border-radius: 4px;
+  text-decoration: none;
+}
