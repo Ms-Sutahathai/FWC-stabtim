@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* หัวใจหลักของ Parallax Effect */
+.parallax {
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.img1 {
+    background-image: url("https://images.unsplash.com/photo-1543466835-00a7907e9de1");
+}
+
+.img2 {
+    background-image: url("https://images.unsplash.com/photo-1517849845537-4d257902454a");
+}
+
+/* จัดข้อความให้อยู่ตรงกลางภาพ */
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px 25px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+/* ส่วนบล็อกสีดำ */
+.section-black {
+    background-color: #282e34;
+    color: #ddd;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-black h3 {
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
