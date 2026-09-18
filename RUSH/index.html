@@ -3,98 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piscine Discovery - Rush</title>
-  <!-- ดึง Bootstrap 5 CSS มาใช้ -->
+  <title>Rush 00 - Team Showcase</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
   <style>
-    /* 1. ตั้งค่าการขยับของรูปพื้นหลัง */
+    /* กำหนดสีพื้นหลังส้มเข้มเฉดมืด (Dark Orange) */
     body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden; /* ซ่อนส่วนเกินไม่ให้เกิด Scrollbar */
-      position: relative;
-    }
-
-    /* 2. ตัวใส่รูปพื้นหลัง และสั่งให้เคลื่อนไหว */
-    .bg-animation {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 110%; /* ขยายภาพให้กว้างกว่าจอเล็กน้อยเพื่อไม่ให้เห็นขอบเวลาขยับ */
-      height: 110%;
-      /* เปลี่ยน URL รูปภาพตรงนี้ตามต้องการ */
-      background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80');
-      background-size: cover;
-      background-position: center;
-      z-index: -2; /* ดันรูปไปอยู่หลังสุด */
-      /* เรียกใช้ animation ชื่อ moveBg ความยาว 20 วินาที แบบวนลูปไม่สิ้นสุด */
-      animation: moveBg 20s ease-in-out infinite alternate;
-    }
-
-    /* 3. แผ่นฟิล์มสีดำใสทับพื้นหลัง เพื่อให้ข้อความอ่านง่ายขึ้น */
-    .bg-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.6); /* สีดำโปร่งแสง 60% */
-      z-index: -1;
-    }
-
-    /* 4. กำหนดทิศทางการขยับของรูปภาพ (Animation Keyframes) */
-    @keyframes moveBg {
-      0% {
-        transform: scale(1) translate(0, 0); /* ขนาดปกติ */
-      }
-      100% {
-        transform: scale(1.1) translate(-20px, -20px); /* ค่อยๆ ซูมขึ้น 10% และเลื่อนไปทางซ้ายบน */
-      }
-    }
-
-    /* 5. ตกแต่งการ์ดให้ใสกระจก (Glassmorphism Effect) */
-    .glass-card {
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(10px); /* ทำฉากหลังการ์ดเบลอ */
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 15px;
-      color: white;
+      background-color: #6e3003; 
     }
   </style>
 </head>
-<body>
+<body class="text-white d-flex align-items-center min-vh-100 text-center">
 
-  <!-- แผ่นพื้นหลังที่ขยับได้ -->
-  <div class="bg-animation"></div>
-  <!-- แผ่นเงาสีดำบังภาพไม่ให้สว่างเกินไป -->
-  <div class="bg-overlay"></div>
-
-  <!-- เนื้อหาหลักตรงกลางหน้าจอ -->
-  <div class="container text-center text-white my-5">
-    <h1 class="fw-bold display-4 mb-3">Piscine Discovery Rush</h1>
-    <p class="lead mb-5 text-light">Welcome to our portfolio showcase site.</p>
-
-    <div class="row justify-content-center g-4">
-      <!-- ลิงก์ไป CV 1 -->
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-3">Welcome to Our Portfolio</h1>
+    <p class="lead text-light opacity-75 mb-5">Piscine Discovery Rush 00 Project - 42 Bangkok</p>
+    
+    <div class="row g-4 justify-content-center">
+      <!-- Card Member 1 -->
       <div class="col-md-5">
-        <div class="glass-card p-4 shadow">
-          <h3>Member 1</h3>
-          <p class="text-light opacity-75">View personal portfolio and resume.</p>
-          <a href="cv1.html" class="btn btn-primary btn-lg mt-2 px-4">Go to CV 1</a>
+        <div class="card bg-dark text-white p-4 h-100 shadow border border-warning border-2">
+          <h2>pemika</h2>
+          <p class="text-secondary">Applied Mathematics</p>
+          <a href="pesriton.html" class="btn btn-warning mt-auto fw-bold">View pemika </a>
         </div>
       </div>
-
-      <!-- ลิงก์ไป CV 2 -->
+      
+      <!-- Card Member 2 -->
       <div class="col-md-5">
-        <div class="glass-card p-4 shadow">
-          <h3>Member 2</h3>
-          <p class="text-light opacity-75">View personal portfolio and resume.</p>
-          <a href="cv2.html" class="btn btn-success btn-lg mt-2 px-4">Go to CV 2</a>
+        <div class="card bg-dark text-white p-4 h-100 shadow border border-warning border-2">
+          <h2>Sutahathai</h2>
+          <p class="text-secondary">Applied Mathematics</p>
+          <a href="stabtim.html" class="btn btn-warning mt-auto fw-bold">View Sutahathai</a>
         </div>
       </div>
     </div>
